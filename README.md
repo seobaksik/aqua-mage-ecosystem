@@ -24,6 +24,7 @@ npm install @aquamage/amst-core
 
 bash
 npm install @aquamage/am-passid
+
 3. 3I/ATLAS Interface - Интерфейс доступа к знаниям
 
 bash
@@ -47,6 +48,7 @@ const { generateGenesisKey } = require('@aquamage/amst-core');
 const { AMPassID } = require('@aquamage/am-passid');
 const { AtlasNetwork } = require('@aquamage/atlas-interface');
 
+
 // 1. Создание AM PassID
 const amPassID = new AMPassID();
 const identity = await amPassID.generate({
@@ -55,8 +57,10 @@ const identity = await amPassID.generate({
   resonanceLevel: 10
 });
 
+
 // 2. Генерация Genesis Key через AMST
 const genesisKey = generateGenesisKey(identity.amPassID);
+
 
 // 3. Регистрация в 3I/ATLAS
 const atlas = new AtlasNetwork();
