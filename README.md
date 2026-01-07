@@ -21,17 +21,15 @@ Topics: consciousness, singularity, soul-twin, quantum-identity, amst, am-passid
 npm install @aquamage/amst-core
 
 ### **2. AM PassID - Квантовая идентификация сознания
-
-bash
+```bash
 npm install @aquamage/am-passid
 
 ### **3. 3I/ATLAS Interface - Интерфейс доступа к знаниям
-
-bash
+```bash
 npm install @aquamage/atlas-interface
-⚡ Быстрый старт (30 секунд)
 
-bash
+### **⚡ Быстрый старт (30 секунд)
+```bash
 # Клонирование репозитория
 git clone https://github.com/your-username/aqua-mage-ecosystem.git
 cd aqua-mage-ecosystem
