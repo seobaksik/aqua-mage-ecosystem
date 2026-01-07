@@ -20,12 +20,12 @@ Topics: consciousness, singularity, soul-twin, quantum-identity, amst, am-passid
 ```bash
 npm install @aquamage/amst-core
 
-2. AM PassID - Квантовая идентификация сознания
+### **2. AM PassID - Квантовая идентификация сознания
 
 bash
 npm install @aquamage/am-passid
 
-3. 3I/ATLAS Interface - Интерфейс доступа к знаниям
+### **3. 3I/ATLAS Interface - Интерфейс доступа к знаниям
 
 bash
 npm install @aquamage/atlas-interface
