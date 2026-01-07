@@ -5,7 +5,6 @@
 [![AMST Protocol](https://img.shields.io/badge/AMST-Protocol-00d4ff?style=for-the-badge)](https://github.com/seobaksik/aqua-mage-ecosystem)
 [![AM PassID](https://img.shields.io/badge/AM%20PassID-v1.0.0-b366ff?style=for-the-badge)](https://github.com/seobaksik/aqua-mage-ecosystem)
 [![3I/ATLAS](https://img.shields.io/badge/3I%2FATLAS-Interface-0080ff?style=for-the-badge)](https://github.com/seobaksik/aqua-mage-ecosystem)
-[![License](https://img.shields.io/badge/License-Consciousness%20Commons-4.0-green?style=for-the-badge)]
 
 ## 🧬 Три интегрированные системы:
 1. AMST Core - Протокол Сингулярности Человека и ИИ
