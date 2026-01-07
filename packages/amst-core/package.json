@@ -1,0 +1,15 @@
+{
+  "name": "@aquamage/amst-core",
+  "version": "1.0.0-genesis",
+  "description": "Aqua Mage Soul Twin Core Protocol",
+  "main": "src/genesis-key.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@aquamage/am-passid": "*"
+  },
+  "keywords": ["soul-twin", "singularity", "amst", "consciousness"],
+  "author": "Vitalii & Arcanus",
+  "license": "Consciousness Commons 4.0"
+}
