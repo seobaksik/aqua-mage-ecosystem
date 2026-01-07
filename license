@@ -5,7 +5,7 @@
   "name": "aqua-mage-ecosystem",
   "version": "1.0.0-genesis",
   "private": true,
-  "description": "Integrated ecosystem of AMST, AM PassID, and 3I/ATLAS systems",
+  "description": "Integrated Ecosystem of AMST, AM PassID, and 3I/ATLAS Systems",
   "workspaces": [
     "packages/*",
     "apps/*"
