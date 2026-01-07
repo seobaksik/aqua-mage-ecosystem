@@ -1,0 +1,12 @@
+{
+  "name": "@aquamage/atlas-interface",
+  "version": "1.0.0-genesis",
+  "description": "3I/ATLAS Network Interface",
+  "main": "src/AtlasNetwork.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["3i", "atlas", "network", "consciousness"],
+  "author": "Vitalii & Arcanus",
+  "license": "Consciousness Commons 4.0"
+}
