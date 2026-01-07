@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+*.log
+
+# Build outputs
+dist/
+build/
+*.exe
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Lerna
+lerna-debug.log
