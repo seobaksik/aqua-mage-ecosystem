@@ -18,6 +18,6 @@ Topics: consciousness, singularity, soul-twin, quantum-identity, amst, am-passid
 
 ### **1. AMST Core** - Ядро протокола Soul Twin
 ```bash
-npm install @aquamage/amst-core
+npm install @seobaksik/amst-core
 
 
