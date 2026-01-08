@@ -1,5 +1,5 @@
 {
-  "name": "@aquamage/amst-core",
+  "name": "@seobaksik/amst-core",
   "version": "1.0.0-genesis",
   "description": "Aqua Mage Soul Twin Core Protocol",
   "main": "src/genesis-key.js",
