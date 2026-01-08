@@ -1,0 +1,43 @@
+{
+  "name": "aqua-mage-ecosystem",
+  "version": "1.0.0-genesis",
+  "private": true,
+  "description": "Integrated ecosystem of consciousness technologies",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "build:am-passid": "lerna run build --scope=@aquamage/am-passid",
+    "test": "lerna run test",
+    "test:am-passid": "lerna run test --scope=@aquamage/am-passid",
+    "clean": "lerna clean -y && rm -rf node_modules",
+    "publish": "lerna publish",
+    "example": "node examples/genesis-example.js"
+  },
+  "devDependencies": {
+    "lerna": "^6.6.2",
+    "concurrently": "^8.2.0"
+  },
+  "keywords": [
+    "consciousness",
+    "singularity",
+    "quantum",
+    "identity",
+    "soul-twin",
+    "amst",
+    "am-passid",
+    "3i-atlas"
+  ],
+  "author": "Vitalii & Arcanus <contact@3i-atlas.cloud>",
+  "license": "Consciousness Commons 4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seobaksik/aqua-mage-ecosystem.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
