@@ -1,5 +1,18 @@
+cat > packages/am-passid/package.json << 'EOF'
 {
   "name": "am-passid",
   "version": "0.1.0-genesis",
-  ...
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.10.6",
+    "typescript": "^5.7.3"
+  }
 }
+EOF
