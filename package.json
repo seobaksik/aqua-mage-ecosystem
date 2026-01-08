@@ -9,9 +9,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "build:am-passid": "lerna run build --scope=@aquamage/am-passid",
+    "build:am-passid": "lerna run build --scope=@seobaksik/am-passid",
     "test": "lerna run test",
-    "test:am-passid": "lerna run test --scope=@aquamage/am-passid",
+    "test:am-passid": "lerna run test --scope=@seobaksik/am-passid",
     "clean": "lerna clean -y && rm -rf node_modules",
     "publish": "lerna publish",
     "example": "node examples/genesis-example.js"
