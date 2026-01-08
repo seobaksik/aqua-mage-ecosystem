@@ -1,3 +1,4 @@
+cat > packages/am-passid/package.json << 'EOF'
 {
   "name": "am-passid",
   "version": "0.1.0-genesis",
@@ -14,3 +15,4 @@
     "typescript": "^5.7.3"
   }
 }
+EOF
