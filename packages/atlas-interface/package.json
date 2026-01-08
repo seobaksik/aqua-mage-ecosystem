@@ -1,5 +1,5 @@
 {
-  "name": "@aquamage/atlas-interface",
+  "name": "@seobaksik/atlas-interface",
   "version": "1.0.0-genesis",
   "description": "3I/ATLAS Network Interface",
   "main": "src/AtlasNetwork.js",
