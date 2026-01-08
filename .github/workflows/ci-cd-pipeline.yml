@@ -1,0 +1,84 @@
+name: CI/CD Pipeline for Aqua Mage Ecosystem
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Позволяет запускать вручную
+
+jobs:
+  # 🔧 Первый этап: Валидация и тестирование
+  validate-and-test:
+    name: 🧪 Validate & Test
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: ⎔ Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    
+    - name: 📦 Install root dependencies
+      run: npm ci
+    
+    - name: 🔗 Bootstrap packages with Lerna
+      run: npx lerna bootstrap --ci
+    
+    - name: 🔍 TypeScript type checking
+      run: |
+        cd packages/am-passid
+        npx tsc --noEmit --project tsconfig.json
+    
+    - name: 🧪 Run tests
+      run: npx lerna run test --stream
+    
+    - name: 🏗️ Build packages
+      run: npx lerna run build --stream
+    
+    - name: 📊 Upload test coverage
+      uses: codecov/codecov-action@v3
+      with:
+        directory: ./packages/am-passid/coverage
+
+  # 🚀 Второй этап: Публикация (только для main ветки)
+  publish-package:
+    name: 🚀 Publish to npm
+    needs: validate-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: ⎔ Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        registry-url: 'https://registry.npmjs.org/'
+    
+    - name: 📦 Install dependencies
+      run: |
+        npm ci
+        npx lerna bootstrap --ci
+    
+    - name: 🏗️ Build all packages
+      run: npx lerna run build --stream
+    
+    - name: 🚀 Publish @aquamage/am-passid
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: |
+        cd packages/am-passid
+        npm publish --access public
