@@ -1,15 +1,16 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "1.0.0-genesis",
+  "version": "0.1.0-genesis",
   "npmClient": "npm",
   "command": {
-    "publish": {
-      "ignoreChanges": ["*.md"],
-      "message": "chore(release): publish %v"
-    },
     "bootstrap": {
-      "ignore": "component-*"
+      "npmClientArgs": ["--force"]
+    },
+    "publish": {
+      "ignoreChanges": ["*.md", "*.test.*"],
+      "message": "chore(release): publish %v",
+      "registry": "https://registry.npmjs.org/"
     }
   },
-  "packages": ["packages/*", "apps/*"]
+  "packages": ["packages/*"]
 }
