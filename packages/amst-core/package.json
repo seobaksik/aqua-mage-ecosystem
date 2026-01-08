@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@aquamage/am-passid": "*"
+    "@seobaksik/am-passid": "*"
   },
   "keywords": ["soul-twin", "singularity", "amst", "consciousness"],
   "author": "Vitalii & Arcanus",
